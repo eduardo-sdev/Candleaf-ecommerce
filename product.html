@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Candleaf</title>
+  </head>
+  <body>
+    <header>
+        <section class="container header">
+            <div class="menu-hamburger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <h1><a href="/">
+                <figure>
+                    <img
+                        src="./img/logos/logo.png"
+                        alt="logo candleaf"/>
+                </figure></a>
+            </h1>
+            <nav>
+                <ul class="menu">
+                    <li class="sub-menu">
+                        <p>Discovery<i class="bi bi-chevron-down"></i></p>
+                        <ul>
+                            <li><a href="index.html/#products">Produtos</a></li>
+                            <li><a href="http://127.0.0.1:5173/#benefits">Beneficios</a></li>
+                            <li><a href="http://127.0.0.1:5173/#popular">popular</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+            </nav>
+            <article class="icons-menu">
+                <a href="#"><i class="bi bi-person"></i></a>
+                <a class="icon-cart" href="./cart.html"><i class="bi bi-cart"></i><span>1</span></a>
+            </article>
+        </section>
+    </header>
+    <main class="container">
+      <section class="page-product">
+        <article class="free-shopping">
+          <p>
+            All hand-made with natural soy wax, Candleaf is made for your
+            pleasure moments.
+            <span>
+                <img src="../img/icones/truck.png" alt="emoji de caminhão" />
+              free shipping
+            </span>
+          </p>
+        </article>
+        <section>
+          <h2>Spiced Mint Candleaf®</h2>
+          <figure>
+            <picture>
+              <source
+                media="(max-width:780px)"
+                srcset="../img/fotos/spiced-mint-mobile.png"
+              />
+              <img
+                src="../img/fotos/spiced-mint.png"
+                alt="produto spiced mint"
+              />
+            </picture>
+          </figure>
+          <form id="form-quantity-product" action="#" method="post">
+            <section class="cart">
+              <article class="quantity">
+                <p class="price">$ 9.99</p>
+                <article>
+                  <label for="quantity">Quantity</label>
+                  <div>
+                    <button type="button" class="btn-more">+</button>
+                    <input
+                      id="quantity"
+                      placeholder="1"
+                      type="number"
+                      name="quantity"
+                      min="1"
+                      value="1"
+                    />
+                    <button type="button" class="btn-less">-</button>
+                  </div>
+                </article>
+              </article>
+              <article class="checkboxs">
+                <article>
+                  <input type="radio" name="subscribe" id="checkbox1" checked />
+                  <label for="checkbox1">One time purchase</label>
+                </article>
+                <section>
+                  <article class="check-subscribe">
+                    <article>
+                      <input type="radio" name="subscribe" id="subscribe" />
+                      <label for="subscribe">Subscribe and delivery every</label>
+                      <select name="weeks">
+                        <option value="4">4 weeks</option>
+                      </select>
+                    </article>
+                    <p>
+                      Subscribe now and get the 10% of discount on every
+                      recurring order. The discount will be applied at checkout.
+                      <a href="#">See details</a>
+                    </p>
+                  </article>
+                  <p>
+                      <a class="button" href="./cart.html">
+                        <i class="bi bi-cart"></i> + Add to cart
+                      </a>
+                  </p>
+                </section>
+              </article>
+            </section>
+          </form>
+
+          <article class="product-description">
+            <p>
+              <span>Fragrance:</span> Premium quality ingredients with natural
+              essential oils
+            </p>
+            <p>
+              <span>Wax:</span> Top grade Soy wax that delivers a smoke less,
+              consistent burn
+            </p>
+            <div class="info">
+              <p><span>Burning Time:</span> 70-75 hours</p>
+              <p><span>Dimension:</span> 10cm x 5cm</p>
+              <p><span>Weight:</span> 400g</p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <section class="container footer">
+            <article>
+                <article class="logo-footer">
+                    <figure>
+                        <img src="./img/logos/logo-footer.png" alt="logo footer" />
+                    </figure>
+                    <p>
+                        Your natural candle made for your home and for your
+                        wellness.
+                    </p>
+                </article>
+
+                <article class="footer-links">
+                    <div>
+                        <h3>Discovery</h3>
+                        <ul>
+                            <li><a href="#">New season</a></li>
+                            <li><a href="#"> Most searched </a></li>
+                            <li><a href="#"> Most selled </a></li>
+                        </ul>
+                    </div>
+                    <div class="about">
+                        <h3>About</h3>
+                        <ul>
+                            <li><a href="#"> Help </a></li>
+                            <li><a href="#"> Shipping </a></li>
+                            <li><a href="#"> Affiliate </a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Info</h3>
+                        <ul>
+                            <li><a href="#"> Contact us </a></li>
+                            <li><a href="#"> Privacy Policies </a></li>
+                            <li><a href="#"> Terms & Conditions </a></li>
+                        </ul>
+                    </div>
+                </article>
+            </article>
+        </section>
+        <p class="rights">©Candleaf All Rights Reserved.</p>
+    </footer>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/projeto-final.js"></script>
+  </body>
+</html>

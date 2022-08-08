@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Candleaf</title>
+</head>
+<body>
+    <main>
+        <section class="container">
+            <section class="page-authentication">
+                <section class="logo-candleat">
+                    <h1><a href="/">
+                        <figure>
+                            <img src="../img/logos/logo.png" 
+                                alt="logo candleaf" />
+                        </figure>
+                        </a></h1>
+                </section>
+                <section class="account-details">
+                    <section class="section-left">
+                        <section class="breadcrumb">
+                            <ul>
+                                <li>
+                                    <a 
+                                        href="./cart.html" 
+                                        class="green">Cart</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#" class="black">Details</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li>
+                                    <a href="#">Shipping</a>
+                                    <i class="bi bi-chevron-right"></i>
+                                </li>
+                                <li><a href="#">Payment</a></li>
+                            </ul>
+                        </section>
+
+                        <form
+                            action="/"
+                            method="post"
+                            id="form-authentication"
+                            autocomplete="off">
+                            <article class="contact">
+                                <div>
+                                    <label class="title" for="contact-email-phone">Contact</label>
+                                    <p>
+                                        Do you have an account?
+                                        <a href="#">Login</a>
+                                    </p>
+                                </div>
+                                <input placeholder="Email or mobile phone number" id="contact_email_phone"
+                                    name="contact_email_phone" type="text" />
+                                <article class="checkbox">
+                                    <input type="checkbox" name="newsletter" id="newsletter" />
+                                    <label for="newsletter">
+                                        Add me to Candleaf newsletter for a 10% discount</label>
+                                </article>
+                            </article>
+                            <article class="shipping">
+                                <h3 class="title">Shipping Address</h3>
+                                <div class="wrapper">
+                                    <p>
+                                        <input id="name" name="name" type="text" placeholder="Name" />
+                                    </p>
+                                    <p>
+                                        <input id="second_name" name="second_name" type="text"
+                                            placeholder="Second Name" />
+                                    </p>
+                                </div>
+
+                                <p>
+                                    <input id="addreess" name="addreess" type="text"
+                                        placeholder="Anddress and Number" />
+                                </p>
+
+                                <div class="wrapper">
+                                    <p>
+                                        <input id="city" name="city" type="text" placeholder="City" />
+                                    </p>
+                                    <p>
+                                        <input id="postal_code" name="postal_code" type="text"
+                                            placeholder="Postal Code" />
+                                    </p>
+                                    <div class="select">
+                                        <span>Province</span>
+                                        <select name="province" id="province">
+                                            <option value="">Province</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="select">
+                                    <span>Country/Region</span>
+                                    <select name="country-region" id="country-region">
+                                        <option value="italy">Italy</option>
+                                    </select>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" name="save_info" id="save_info" />
+                                    <label for="save_info">Save this informations for a future fast checkout</label>
+                                </div>
+                            </article>
+                            <article class="go_to_shipping">
+                                <p><a href="./cart.html">Back to cart</a></p>
+                                <p>
+                                    <input class="button" type="submit" value="Go to shipping" />
+                                </p>
+                            </article>
+                        </form>
+                    </section>
+                    <section class="section-right hide">
+                        <article class="product">
+                            <figure>
+                                <picture>
+                                    <source media="(max-width:780px)"
+                                        srcset="../img/fotos/spiced-mint-cart-mobile.png" />
+                                    <img src="../img/fotos/spiced-mint-cart.png" alt="produto spiced-mint" />
+                                </picture>
+                                <span>1</span>
+                            </figure>
+                            <div>
+                                <h3>Spiced Mint Candleaf®</h3>
+                                <p>$ 9.99</p>
+                            </div>
+                        </article>
+
+                        <form class="add-code" action="#">
+                                <input type="text" name="add_code" id="add_code" placeholder="Coupon code" />
+                                <input type="button" class="button" value="Add code" />
+                        </form>
+                        <div class="value-product">
+                            <div>
+                                <p>Subtotal
+                                    <span class="price">$ 9.99</span>
+                                </p>
+                                <p>Shipping
+                                    <span>Calculated at the next step</span>
+                                </p>
+                            </div>
+                            <p>Total
+                                <span class="price-total">$ 9.99</span>
+                            </p>
+                        </div>
+
+                        <!-- botao mobile -->
+                        <article class="order-details">
+                            <div><div>
+                                    <i class="bi bi-cart"></i>
+                                    <span>1</span>
+                                </div>
+                                <p>
+                                    See your order details
+                                    <i class="bi bi-chevron-up"></i>
+                                </p>
+                            </div>
+                            <p class="price">$ 9.99</p>
+                        </article>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"
+        integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"
+        integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="./js/projeto-final.js"></script>
+</body>
+
+</html>
