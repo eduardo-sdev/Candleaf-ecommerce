@@ -36,7 +36,7 @@ $(document).ready(function() {
     $(window).resize(function() {resizableCards()})
     resizableCards()
 
-    // pagina de auth
+    // pagina de autenticacao
     $(".order-details").click(function(){
         $(".section-right").toggleClass('hide')
     })
@@ -55,7 +55,7 @@ $(document).ready(function() {
             contact_email_phone: {required: true,},
             name: {required: true},
             second_name: {required: true},
-            addreess: {required: true},
+            address: {required: true},
             city: {required: true},
             postal_code: {required: true},
         },
@@ -65,7 +65,7 @@ $(document).ready(function() {
             },
             name: {required: "Please enter your name",},
             second_name: {required: "Please Enter your Second Name",},
-            addreess: {required: "Please Enter your Addreess",},
+            address: {required: "Please Enter your Addreess",},
             city: {required: "Please Enter your City",},
             postal_code: {required: "Field Required",},
         }
