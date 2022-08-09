@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@400;500;700&display=swap");
 html,
 body,
 div,
@@ -18,7 +18,6 @@ main,
 article,
 aside,
 figure,
-figcaption,
 footer,
 header,
 nav,
@@ -212,7 +211,7 @@ header.topo-fixo {
   cursor: pointer;
 }
 
-/* cards pagina de produto */
+/* cards da pagina de produto */
 .cards {
   display: grid;
   gap: 30px;
@@ -253,7 +252,7 @@ header.topo-fixo {
   padding: 8px;
 }
 
-/* beneficios */
+/* sercao beneficios */
 .section-benefits {
   background: #f7f8fa;
   padding: 133px 0 234px;
@@ -303,7 +302,7 @@ header.topo-fixo {
   background: rgba(86, 178, 128, 0.1);
 }
 
-/* depoimentos */
+/* sercao depoimentos */
 .section-testimoials .testimoials {
   display: flex;
   gap: 31px;
@@ -342,9 +341,7 @@ header.topo-fixo {
   margin: 47px 0 114px;
   position: relative;
 }
-.page-product > section {
-  margin-left: 20px;
-}
+.page-product > section {margin-left: 20px;}
 .page-product > section .cart {
   display: flex;
   gap: 115px;
@@ -369,6 +366,7 @@ header.topo-fixo {
 .page-product .quantity article {
   width: 75px;
   font: 18px/26px "Roboto", sans-serif;
+  background:
 }
 .page-product .quantity article label {
   display: flex;
@@ -378,17 +376,12 @@ header.topo-fixo {
   color: #272727;
   margin-bottom: 10px;
 }
-.page-product .quantity article .btn-less {
-  color: #a7a7a7;
-}
-.page-product .quantity article input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
+.page-product .quantity .btn-less {color: #a7a7a7;}
+.page-product .quantity input::-webkit-inner-spin-button {-webkit-appearance: none;}
 .page-product .quantity div {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  height: 30px;
   border: 1px solid #56b280;
 }
 .page-product .quantity button {
@@ -396,8 +389,9 @@ header.topo-fixo {
   color: #56b280;
   background: transparent;
   border: 0;
-  font-size: 15px;
+  font-size: 18px;
   cursor: pointer;
+  font-weight: bold;
 }
 .page-product .quantity input {
   width: 15px;
@@ -405,16 +399,12 @@ header.topo-fixo {
   border: 0;
 }
 .page-product .checkboxs input,
-.page-product .checkboxs label {
-  cursor: pointer;
-}
-.page-product .checkboxs > article {
-  margin: 18px 20px;
-}
+.page-product .checkboxs label {cursor: pointer;}
+.page-product .checkboxs > article {margin: 18px 20px;}
 .page-product .checkboxs label {
   font: 400 16px/16px "Roboto", sans-serif;
   letter-spacing: -0.9px;
-  margin-left: 20px;
+  margin-left: 8px;
 }
 .page-product .checkboxs select {
   width: 75px;
@@ -423,23 +413,25 @@ header.topo-fixo {
   padding: 3px 4px;
   margin-left: 10px;
   color: #272727;
+  border: 1px solid;
+  background: transparent;
 }
-.page-product .checkboxs .check-subscribe {
+.page-product .check-subscribe {
   border: 1px solid #e6e6e6;
-  padding: 20px;
+  padding: 18px;
   border-radius: 7px;
   margin-bottom: 67px;
 }
-.page-product .checkboxs .check-subscribe article {
+.page-product .check-subscribe article {
   display: flex;
   align-items: center;
   margin-bottom: 16px;
 }
-.page-product .checkboxs .check-subscribe p {
-  font: 400 16px/16px "Helvetica";
+.page-product .check-subscribe p {
+  font: 400 14px/16px "Helvetica";
   color: #818181;
 }
-.page-product .checkboxs .check-subscribe p a {
+.page-product .check-subscribe p a {
   font-size: 14px;
   color: #56b280;
 }
@@ -529,7 +521,7 @@ header.topo-fixo {
 }
 .page-cart > div div {
   display: flex;
-  gap: 165px;
+  gap: 174px;
 }
 .page-cart > div,
 .page-cart .product {
@@ -539,10 +531,10 @@ header.topo-fixo {
 }
 .page-cart .product {
   margin-top: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgba(86, 178, 128, 0.2);
 }
-.page-cart .product > article {
-  display: flex;
-}
+.page-cart .product > article {display: flex;}
 .page-cart .product > article figure img {
   width: fit-content;
   background: #f7f8fa;
@@ -575,6 +567,7 @@ header.topo-fixo {
   width: 55px;
   font: 18px "Roboto", sans-serif;
   border: 1px solid #56b280;
+  padding: 0px 7px;
 }
 .page-cart .quantity div label {
   display: flex;
@@ -590,7 +583,7 @@ header.topo-fixo {
   color: #56b280;
   background: transparent;
   border: 0;
-  font-size: 15px;
+  font-size: 18px;
   cursor: pointer;
 }
 .page-cart .quantity .btn-less {color: #a7a7a7;}
@@ -598,6 +591,7 @@ header.topo-fixo {
   width: 15px;
   border: 0;
   text-align: center;
+  font-size: 18px;
 }
 .page-cart .check-out {
   display: flex;
@@ -620,10 +614,7 @@ header.topo-fixo {
 }
 .page-cart .check-out h3 span {text-align: right;}
 .page-cart .check-out p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
+  font-family: "Roboto",sans-serif;
   line-height: 26px;
   text-align: right;
   letter-spacing: -0.9px;
@@ -759,13 +750,14 @@ header.topo-fixo {
   flex-direction: column;
   align-items: center;
 }
-.page-authentication .section-right .product {
+.page-authentication .product {
   display: flex;
-  margin: 25px 0 48px;
+  margin: 55px 65px 48px;
   width: 90%;
 }
-.page-authentication .section-right .product figure {position: relative;}
-.page-authentication .section-right .product figure span {
+.page-authentication .product figure {position: relative;}
+.page-authentication .product figure img {width: fit-content;}
+.page-authentication .product figure span {
   position: absolute;
   top: -10px;
   right: -10px;
@@ -779,23 +771,24 @@ header.topo-fixo {
   color: #ffffff;
   background: #56b280;
 }
-.page-authentication .section-right .product figure img {width: fit-content;}
-.page-authentication .section-right .product div {
+.page-authentication .product div {
   display: flex;
   flex-direction: column;
   letter-spacing: -0.9px;
   margin-left: 30px;
 }
-.page-authentication .section-right .product div h3 {
-  line-height: 38px;
+.page-authentication .product div h3 {
+    font: 500 16px/35px 'Poppins', sans-serif;
+    letter-spacing: -0.9px;
+    display: flex;
+    align-items: center;
   color: #272727;
 }
-.page-authentication .section-right .product div p {
-  font-family: 600 21px "Poppins", sans-serif;
-  line-height: 58px;
+.page-authentication .product div p {
+  font:600 21px/58px "Poppins", sans-serif;
   color: #56b280;
 }
-.page-authentication .section-right .add-code {
+.page-authentication .add-code {
   display: flex;
   width: 90%;
   align-items: center;
@@ -805,14 +798,14 @@ header.topo-fixo {
   border-color: rgba(86, 178, 128, 0.2);
   padding: 15px 0;
 }
-.page-authentication .section-right .add-code input[type=button] {
+.page-authentication .add-code input[type=button] {
   width: 116px;
   background: #a8a8a8;
   font: 400 18px/21px "Roboto", sans-serif;
   padding: 8px 10px;
   border: solid #a8a8a8;
 }
-.page-authentication .section-right .add-code input[type=button]:hover {
+.page-authentication .add-code input[type=button]:hover {
   background: #fff;
   color: #55b280;
   border: solid #55b280;
@@ -888,7 +881,6 @@ footer section > article {
   border-top: 1px solid #fff;
 }
 footer .logo-footer {
-  background: #000;
   width: 250px;
   padding-top: 16px;
 }
@@ -1052,9 +1044,7 @@ footer .rights {
     align-items: flex-start;
     margin: 50px 20px;
   }
-  .page-cart .product > article {
-    margin-top: 0;
-  }
+  .page-cart .product > article {margin-top: 0;}
   .page-cart .product > article h2 {
     line-height: 28px;
     font-style: 20px;
@@ -1068,9 +1058,7 @@ footer .rights {
     align-items: center;
     gap: 36px;
   }
-  .page-cart .check-out article {
-    margin: 0;
-  }
+  .page-cart .check-out article {margin: 0;}
   .page-cart .check-out article h3 {
     justify-content: center;
   }
