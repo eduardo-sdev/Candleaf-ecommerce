@@ -36,10 +36,12 @@ $(document).ready(function() {
     $(window).resize(function() {resizableCards()})
     resizableCards()
 
-    // pagina de autenticacao
-    $(".order-details").click(function(){
-        $(".section-right").toggleClass('hide')
+    // toggle button resumo do pedido 
+    $(".summary-product-button").click(function(){
+        $(".summary-product").toggleClass('hide')
     })
+
+    // quantador
     let quantity = 1
     $(".btn-more").on("click", function() {
         $("#quantity").val(++quantity)
