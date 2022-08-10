@@ -292,7 +292,7 @@ header.topo-fixo {
 }
 .section-benefits ul li {
   line-height: 29px;
-  list-style-image: url("../img/icones/check-circle.svg");
+  list-style-image: url("./img/icones/check-circle.svg");
   margin-bottom: 8px;
 }
 .section-benefits ul li strong {
