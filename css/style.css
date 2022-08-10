@@ -16,7 +16,6 @@ form,
 label,
 main,
 article,
-aside,
 figure,
 footer,
 header,
@@ -188,6 +187,9 @@ header.topo-fixo {
   background: rgba(247, 248, 250, 0.7);
   border-radius: 2px;
   padding: 33px 95px 63px;
+}
+.banner-principal figure {
+  z-index: -2;
 }
 .banner-principal h3 {
   font: 500 40px/58px "Poppins", sans-serif;
@@ -398,23 +400,24 @@ header.topo-fixo {
   margin-bottom: 26px;
 }
 .page-product > section figure img {width: fit-content;}
-.page-product .checkboxs input,
-.page-product .checkboxs label {cursor: pointer;}
-.page-product .checkboxs > article {margin: 18px 20px;}
-.page-product .checkboxs label {
+.page-product .checkboxes input,
+.page-product .checkboxes label {cursor: pointer;}
+.page-product .checkboxes > article {margin: 18px 20px;}
+.page-product .checkboxes label {
   font: 400 16px/16px "Roboto", sans-serif;
   letter-spacing: -0.9px;
   margin-left: 8px;
 }
-.page-product .checkboxs select {
+.page-product .checkboxes select {
   width: 75px;
   font: 400 14px/16px "Roboto";
   letter-spacing: -0.9px;
-  padding: 3px 4px;
+  padding: 3px;
   margin-left: 10px;
   color: #272727;
   border: 1px solid;
   background: transparent;
+  height: 27px;
 }
 .page-product .check-subscribe {
   border: 1px solid #e6e6e6;
@@ -435,7 +438,7 @@ header.topo-fixo {
   font-size: 14px;
   color: #56b280;
 }
-.page-product .checkboxs .button {
+.page-product .checkboxes .button {
   font-weight: 400;
   display: flex;
   padding: 8px 0;
@@ -790,7 +793,7 @@ input[type=checkbox] {margin: 0;}
   z-index: 1;
   background: #fff;
 }
-.logo-candleat h1 {padding: 20px 50px;}
+.logo-candleat h1 {padding: 20px 15px;}
 .logo-candleat img {width: fit-content;}
 
 /* pagina de autenticacao */
@@ -996,18 +999,19 @@ footer > p {
     gap: 30px;
     margin-bottom: 0;
   }
-  .page-product .quantity {
+  .page-product .cart > div{
     display: flex;
     margin-top: 15px;
+    gap: 100px;
   }
   .page-product .quantity p {
     margin-bottom: 0;
     margin-right: 110px;
   }
-  .page-product .checkboxs .check-subscribe {margin: 0;}
-  .page-product .checkboxs .button {margin: 25px 0 23px;}
+  .page-product .checkboxes .check-subscribe {margin: 0;}
+  .page-product .checkboxes .button {margin: 25px 0 23px;}
   .page-product .product-description .info {flex-direction: column;}
-  .page-product .free-shopping p {max-width: 380px;}
+  .page-product .free-shopping p {width: 100%;}
 
   /* pagina de carrinho */
   .page-cart > div {margin: 0 20px;}
@@ -1031,7 +1035,7 @@ footer > p {
     background: #fff;
     transition: all 0.4s ease;
     border-bottom: 1px solid rgba(86, 178, 128, 0.2);
-    z-index: 1;
+    z-index: -1;
   }
   .header nav.show {top: 75px;}
   .header .menu {
