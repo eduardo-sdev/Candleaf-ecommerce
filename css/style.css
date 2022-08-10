@@ -92,20 +92,20 @@ header.topo-fixo {
   padding: 20px 0;
   position: relative;
 }
-.header .menu-hamburger {
+.menu-hamburger {
   display: none;
   font-size: 35px;
 }
-.header .menu-hamburger div {
+.menu-hamburger div {
   width: 32px;
   height: 3px;
   background: #272727;
   margin: 6px;
   transition: 0.3s all;
 }
-.header .menu-hamburger.show .line1 {transform: rotate(-40deg) translate(-8px, 8px);}
-.header .menu-hamburger.show .line2 {opacity: 0;}
-.header .menu-hamburger.show .line3 {transform: rotate(40deg) translate(-5px, -6px);}
+.menu-hamburger.show .line1 {transform: rotate(-40deg) translate(-8px, 8px);}
+.menu-hamburger.show .line2 {opacity: 0;}
+.menu-hamburger.show .line3 {transform: rotate(40deg) translate(-5px, -6px);}
 
 .header .menu {
   display: flex;

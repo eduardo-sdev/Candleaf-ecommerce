@@ -27,6 +27,7 @@ $(document).ready(function() {
         if($(".section-products .card:hidden").length == 0){
             $(".section-products .card").hide()
             $(".section-products .card:hidden").slice(0, 4).show()
+            $("#see-more-product").html('See more')
         } else {
             $(".section-products .card").slideDown()
             $("#see-more-product").html('See less')

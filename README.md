@@ -23,3 +23,4 @@
 - Javascript Jquery
 - [Bootstrap Icons](https://icons.getbootstrap.com)
 
+### :slightly_smiling_face:	Dicas é sugestões, serão bem-vindas.
