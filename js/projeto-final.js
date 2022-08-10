@@ -15,8 +15,9 @@ $(document).ready(function() {
         $(".sub-menu ul").toggleClass('show')
     })
 
+    // serção de produtos
     function resizableCards() {
-        if($(window).width() <= 760){
+        if($(window).width() <= 770){
             $(".section-products .card").hide()
             $(".section-products .card:hidden").slice(0, 4).show()
         } else {
@@ -37,7 +38,7 @@ $(document).ready(function() {
     $(window).resize(function() {resizableCards()})
     resizableCards()
 
-    // pagina de carrinho
+    // pagina de auth
     // toggle button resumo do pedido 
     $(".summary-product-button").click(function(){
         $(".summary-product").toggleClass('hide')

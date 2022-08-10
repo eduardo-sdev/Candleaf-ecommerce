@@ -37,7 +37,7 @@ body {
 }
 ul,
 li {list-style: none;}
-img {width: 100%;}
+img {width: fit-content;}
 a {
   color: #1D293F;
   text-decoration: none;
@@ -177,7 +177,6 @@ header.topo-fixo {
   position: relative;
   overflow: hidden;
 }
-.banner-principal img {width: fit-content;}
 .banner-principal article {
   position: absolute;
   left: 50%;
@@ -226,7 +225,6 @@ header.topo-fixo {
   background: #f7f8fa;
   transition: 0.5s all;
 }
-.cards .card img {width: fit-content;}
 .cards .card:hover {
   transform: translateY(-10px);
   filter: drop-shadow(0px 4px 24px rgba(123, 123, 123, 0.3));
@@ -292,7 +290,7 @@ header.topo-fixo {
 }
 .section-benefits ul li {
   line-height: 29px;
-  list-style-image: url("./img/icones/check-circle.svg");
+  list-style-image: url("../img/icones/check-circle.svg");
   margin-bottom: 8px;
 }
 .section-benefits ul li strong {
@@ -317,9 +315,6 @@ header.topo-fixo {
   text-align: center;
   background: #fff;
   box-shadow: 0px 4px 24px rgba(139, 167, 178, 0.16);
-}
-.section-testimoials img {
-  width: fit-content;
 }
 .section-testimoials figure {
   margin: 33px 0 14px;
@@ -399,7 +394,6 @@ header.topo-fixo {
   color: #56b280;
   margin-bottom: 26px;
 }
-.page-product > section figure img {width: fit-content;}
 .page-product .checkboxes input,
 .page-product .checkboxes label {cursor: pointer;}
 .page-product .checkboxes > article {margin: 18px 20px;}
@@ -471,9 +465,6 @@ header.topo-fixo {
   align-items: end;
   padding-right: 30px;
 }
-.page-product .free-shopping img {
-  width: fit-content;
-}
 .page-product .free-shopping p {
   font: 500 22px/26px "Poppins", sans-serif;
   text-align: center;
@@ -539,7 +530,6 @@ header.topo-fixo {
 }
 .page-cart .product > article {display: flex;}
 .page-cart .product > article figure img {
-  width: fit-content;
   background: #f7f8fa;
   margin-right: 30px;
 }
@@ -627,7 +617,6 @@ header.topo-fixo {
   align-items: center;
   padding: 0 30px;
 }
-.summary-product img {width: fit-content;}
 .summary-product .product,
 .summary-product .add-code,
 .summary-product-button,
@@ -794,7 +783,6 @@ input[type=checkbox] {margin: 0;}
   background: #fff;
 }
 .logo-candleat h1 {padding: 20px 15px;}
-.logo-candleat img {width: fit-content;}
 
 /* pagina de autenticacao */
 .page-authentication .title {
@@ -857,7 +845,6 @@ input[type=checkbox] {margin: 0;}
   justify-content: center;
   padding: 0 15px;
 }
-.page-thanks img{width: fit-content;}
 .page-thanks .link{
     font:400 14px/16px 'Helvetica';
     text-decoration: underline;
@@ -917,10 +904,7 @@ footer .logo-footer {
   width: 250px;
   padding-top: 16px;
 }
-footer .logo-footer img {
-  width: fit-content;
-  padding-bottom: 9px;
-}
+footer .logo-footer img {padding-bottom: 9px;}
 footer .logo-footer p {
   line-height: 23px;
   letter-spacing: -0.5px;
@@ -949,7 +933,7 @@ footer > p {
   justify-content: center;
   background: #fff;
   color: #5E6E89;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 @media screen and (max-width: 1024px) {
@@ -964,10 +948,8 @@ footer > p {
     padding-right: 50px;
   }
   .section-testimoials .wrapper {overflow-x: scroll;}
-  .section-benefits {
-    display: flex;
-    margin: 0 auto;
-  }
+
+  .section-benefits{display: flex;padding-bottom: 0;}
   .section-benefits .title {
     text-align: center;
     margin: 0 auto;
@@ -975,7 +957,6 @@ footer > p {
   .section-benefits .title p {margin: 10px auto;}
   .section-benefits section > div {flex-direction: column-reverse;}
   .section-benefits figure {position: static;}
-  .section-benefits figure img {width: fit-content;}
   .page-product {
     flex-direction: column-reverse;
     align-items: center;
