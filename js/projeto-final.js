@@ -69,7 +69,7 @@ $(document).ready(function() {
             second_name: {required: "Please Enter your Second Name",},
             address: {required: "Please Enter your Addreess",},
             city: {required: "Please Enter your City",},
-            postal_code: {required: "Field Required",},
+            postal_code: {required: "Requerid postal code",},
         }
     })
     $('#postal_code').mask('00000');

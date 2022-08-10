@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon" />
+
+    <!-- bootstrap icon -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" />
+
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Candleaf</title>
@@ -44,10 +47,10 @@
                         </section>
 
                         <form
-                            action="/thanks.html"
+                            action="thanks.html"
                             method="post"
                             id="form-authentication"
-                            autocomplete="off">
+                            enctype="multipart/form">
                             <article class="contact">
                                 <div>
                                     <label class="title" for="contact-email-phone">Contact</label>
@@ -129,10 +132,11 @@
                             </div>
                         </article>
 
-                        <form class="add-code" action="#">
-                                <input type="text" name="add_code" id="add_code" placeholder="Coupon code" />
-                                <input type="button" class="button" value="Add code" />
-                        </form>
+                        <article class="add-code">
+                            <input type="text" name="add_code" id="add_code" placeholder="Coupon code" />
+                            <input type="button" class="button" id="add_code"value="Add code" />
+                        </article>
+
                         <div class="value-product">
                             <div>
                                 <p>Subtotal
